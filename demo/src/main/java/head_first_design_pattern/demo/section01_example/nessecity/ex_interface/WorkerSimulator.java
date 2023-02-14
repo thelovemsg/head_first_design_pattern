@@ -11,6 +11,5 @@ public class WorkerSimulator {
         robotWorker.takeARest(0);
         robotWorker.setPayPolicy(new PaySalary());
         robotWorker.getPay();
-
     }
 }
