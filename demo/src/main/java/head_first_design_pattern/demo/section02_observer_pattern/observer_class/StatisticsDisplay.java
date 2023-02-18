@@ -15,7 +15,10 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update(float temp, float humidity, float pressure) {
+    @Override
+    public void update() {
+//    public void update(float temp, float humidity, float pressure) {
+        float temp = weatherData.getTemperature();
         tempSum += temp;
         numReadings++;
 
